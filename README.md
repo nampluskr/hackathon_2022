@@ -3,7 +3,7 @@
 ## Datasets
 
 ### Classification
-* UCI SECOM Dataset](https://www.kaggle.com/datasets/paresh2047/uci-semcom)
+* [UCI SECOM Dataset](https://www.kaggle.com/datasets/paresh2047/uci-semcom)
 
 ### Regression
 * [Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/c/mercedes-benz-greener-manufacturing)
