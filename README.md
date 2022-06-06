@@ -12,8 +12,16 @@
 
 ### Time Series
 * [Kaggle] [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
-* [Openml] [Household-monthly-electricity-bill](https://www.openml.org/search?type=data&status=active&id=43588) (id=43588)
 
+```python
+from sklearn.datasets import fetch_openml
+
+## UCI-SECOM-Dataset
+secom = fetch_openml(id=43587)
+
+## Mercedes_Benz_Greener_Manufacturing
+benz = fetch_openml(id=42570)
+```
 
 ## Pycaret
 
