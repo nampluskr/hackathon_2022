@@ -28,6 +28,10 @@ target_name = benz.target_names
 
 ## Pycaret
 
+```
+> pip install pycaret-nightly[full]
+```
+
 * Official Documents
   * https://pycaret.gitbook.io/docs/
   * https://pycaret.gitbook.io/docs/get-started/tutorials
