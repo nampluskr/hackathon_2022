@@ -12,6 +12,11 @@
 
 ## Pycaret
 
+### Official Documents
 * https://pycaret.gitbook.io/docs/
 * https://pycaret.gitbook.io/docs/get-started/tutorials
 * https://pycaret.gitbook.io/docs/learn-pycaret/examples
+
+### API Reference
+* https://pycaret.readthedocs.io/en/latest/api/classification.html
+* https://pycaret.readthedocs.io/en/latest/api/regression.html
