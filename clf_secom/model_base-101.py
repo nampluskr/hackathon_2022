@@ -76,9 +76,10 @@ if __name__ == "__main__":
     topk_tuned = {name: clf.tune_model(topk[name], optimize=args.metric, n_iter=args.n_iter,
                         verbose=args.verbose, custom_grid=model_grids[name]) for name in model_names}
     
-    blender = clf.blend_models(list(topk_tuned.values()), fold=args.n_folds, 
+    blender = clf.blend_models(list(topk_tuned.values()), fold=args.n_folds, optimize=args.metric,
                                choose_better=True, verbose=args.verbose)
-    # stacker = clf.stack_models(topk_tuned, fold=args.n_folds, choose_better=True, verbose=args.verbose)
+    # stacker = clf.stack_models(topk_tuned, fold=args.n_folds, optimize=args.metric,
+    #                            choose_better=True, verbose=args.verbose)
 
     automl = clf.automl(optimize=args.metric)
     automl = clf.finalize_model(automl)
