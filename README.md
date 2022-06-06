@@ -6,22 +6,31 @@
 * [Kaggle] [UCI SECOM Dataset](https://www.kaggle.com/datasets/paresh2047/uci-semcom)
 * [Openml] [UCI-SECOM-Dataset](https://www.openml.org/search?type=data&status=active&id=43587) (id=43587)
 
+```python
+import pandas as pd
+from sklearn.datasets import fetch_openml
+
+secom = fetch_openml(data_id=43587, as_frame=True)
+data = pd.concat([secom.data, secom.target], axis=1)
+target_name = secom.target_names
+```
+
 ### Regression
 * [Kaggle] [Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/c/mercedes-benz-greener-manufacturing)
 * [Openml] [Mercedes_Benz_Greener_Manufacturing](https://www.openml.org/search?type=data&status=active&id=42570) (id=42570)
 
+```python
+import pandas as pd
+from sklearn.datasets import fetch_openml
+
+benz = fetch_openml(data_id=42570, as_frame=True)
+data = pd.concat([benz.data, benz.target], axis=1)
+target_name = benz.target_names
+```
+
 ### Time Series
 * [Kaggle] [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
 
-```python
-from sklearn.datasets import fetch_openml
-
-## UCI-SECOM-Dataset
-secom = fetch_openml(id=43587)
-
-## Mercedes_Benz_Greener_Manufacturing
-benz = fetch_openml(id=42570)
-```
 
 ## Pycaret
 
