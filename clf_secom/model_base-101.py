@@ -78,7 +78,7 @@ if __name__ == "__main__":
     
     blender = clf.blend_models(list(topk_tuned.values()), fold=args.n_folds, optimize=args.metric,
                                choose_better=True, verbose=args.verbose)
-    # stacker = clf.stack_models(topk_tuned, fold=args.n_folds, optimize=args.metric,
+    # stacker = clf.stack_models(list(topk_tuned.values()), fold=args.n_folds, optimize=args.metric,
     #                            choose_better=True, verbose=args.verbose)
 
     automl = clf.automl(optimize=args.metric)
