@@ -4,14 +4,15 @@
 
 ### Classification
 * [Kaggle] [UCI SECOM Dataset](https://www.kaggle.com/datasets/paresh2047/uci-semcom)
-* [Openml] [UCI-SECOM-Dataset](https://www.openml.org/search?type=data&status=active&id=43587) id=43587
+* [Openml] [UCI-SECOM-Dataset](https://www.openml.org/search?type=data&status=active&id=43587) (id=43587)
 
 ### Regression
 * [Kaggle] [Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/c/mercedes-benz-greener-manufacturing)
-* [Openml] [Mercedes_Benz_Greener_Manufacturing](https://www.openml.org/search?type=data&status=active&id=42570) id=42570
+* [Openml] [Mercedes_Benz_Greener_Manufacturing](https://www.openml.org/search?type=data&status=active&id=42570) (id=42570)
 
 ### Time Series
-* [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
+* [Kaggle] [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
+* [Openml] [Household-monthly-electricity-bill](https://www.openml.org/search?type=data&status=active&id=43588) (id=43588)
 
 
 ## Pycaret
