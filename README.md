@@ -6,6 +6,9 @@
   - [UCI SECOM Dataset](https://www.kaggle.com/datasets/paresh2047/uci-semcom)
 * Regression
   - [Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/c/mercedes-benz-greener-manufacturing)
+* Time Series
+  - [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
+
 
 ## Pycaret
 
