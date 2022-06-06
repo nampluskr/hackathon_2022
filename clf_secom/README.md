@@ -1,3 +1,9 @@
-# Binary Classification - UCI SECOM Dataset
+# UCI SECOM Dataset
 
-* ---
+## Binary Classification
+
+### Ussage
+
+```
+> python train.py
+```
