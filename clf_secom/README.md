@@ -2,7 +2,7 @@
 
 ## Binary Classification
 
-### Ussage
+### Usage
 
 ```
 > python train.py
