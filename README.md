@@ -1,4 +1,4 @@
-# hackathon_2022
+# Hackathon 2022
 
 ## Datasets
 
