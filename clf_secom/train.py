@@ -31,7 +31,6 @@ if __name__ == "__main__":
     # args['n_top']   = [3]                       ## Default: 3
     # args['metric']  = ['AUC', 'LogLoss']        ## Dafault: LogLoss
     
-    kwargs = dict()
     file1 = dict(filename='model_base-001.py', save=True, verbose=False, use_gpu=False)
     file2 = dict(filename='model_base-002.py', save=True, verbose=False, use_gpu=False) 
     
