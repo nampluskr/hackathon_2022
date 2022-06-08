@@ -1,0 +1,5 @@
+Model,Accuracy,AUC,Recall,Prec.,F1,LogLoss,Tact,seed,metric,remove_outliers,outliers_threshold,pca,pca_components,normalize,normalize_method,fix_imbalance,n_folds,n_iter,n_top,models,Mode
+base-002,1,1,1,1,1,0.0353,0:02:10,111,LogLoss,TRUE,0.95,TRUE,zscore,TRUE,0.05,TRUE,10,10,3,"rf, gbc, et",Train
+base-002,0.9311,0.6097,0,0,0,0.2444,0:02:10,111,LogLoss,TRUE,0.95,TRUE,zscore,TRUE,0.05,TRUE,10,10,3,"rf, gbc, et",Test
+base-002,1,1,1,1,1,0.0685,0:00:36,111,LogLoss,TRUE,0.95,TRUE,robust,TRUE,0.05,TRUE,10,10,3,"rf, gbc, et",Train
+base-002,0.8367,0.5515,0.2308,0.12,0.1579,0.4183,0:00:36,111,LogLoss,TRUE,0.95,TRUE,robust,TRUE,0.05,TRUE,10,10,3,"rf, gbc, et",Test
