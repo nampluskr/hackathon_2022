@@ -15,8 +15,10 @@
   - [Kaggle] [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
 
 ## Preprocessing
-![preprocessing](./Preprocessing.jpg)
+
 ### Selected Methods
+![preprocessing](./Preprocessing.jpg)
+
 
 
 ## References
