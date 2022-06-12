@@ -68,17 +68,17 @@ if __name__ == "__main__":
     splits = get_defaults()
 
     ## [1] Data Preparation
-    splits['imputation_type'] = ['iterative']              ## 'iterative'
+    # splits['imputation_type'] = ['iterative']              ## 'iterative'
     splits['fix_imbalance'] = [True]
     # splits['fix_imbalance_method'] = ['smote', 'adasyn', 'random']
     # splits['fix_imbalance_method'] = ['smote', 'adasyn', 'random', 'borderline_smote', 'svm_smote']
-    splits['remove_outliers'] = [False, True]
-    splits['outliers_threshold'] = [0.05]
+    # splits['remove_outliers'] = [False, True]
+    # splits['outliers_threshold'] = [0.05]
 
     ## [2] Scale and Transform
-    splits['normalize'] = [False, True]
-    splits['normalize_method'] = ['robust', 'simple']             ## 'robust'
-    splits['transformation'] = [False]
+    # splits['normalize'] = [False, True]
+    # splits['normalize_method'] = ['robust', 'simple']             ## 'robust'
+    splits['transformation'] = [False, True]
     # splits['transformation_method'] = ['yeo-johnson']   ## 'quantile'
 
     ## [3] Feature Engineering
@@ -102,5 +102,5 @@ if __name__ == "__main__":
 
 
     files = ['model_base.py']
-    run(files, get_defaults())
+    # run(files, get_defaults())
     run(files, splits)
