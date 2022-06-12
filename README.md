@@ -10,6 +10,7 @@
 
 * Regression
   - [Kaggle] [Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/c/mercedes-benz-greener-manufacturing)
+  - [Kaggle] [The Boston Housing Dataset](https://www.kaggle.com/code/prasadperera/the-boston-housing-dataset/notebook)
 
 * Time Series
   - [Kaggle] [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
