@@ -20,6 +20,25 @@
 ### Selected Methods
 ![preprocessing](./Preprocessing.jpg)
 
+## Basic Codes
+
+### Classification
+
+```python
+import pycaret.classification as clf
+
+session = clf.setup(data=train, target=target_name)
+
+```
+
+### Regression
+
+```python
+import pycaret.regression as reg
+
+session = reg.setup(data=train, target=target_name)
+
+```
 
 
 ## References
