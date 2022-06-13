@@ -27,6 +27,7 @@
 ```python
 from pycaret.datasets import get_data
 import pycaret.classification as clf
+import pickle
 
 juice = get_data('juice')
 session = clf.setup(data=juice, target='Purchase', silent=True, verbose=False)
@@ -45,6 +46,12 @@ best_automl = clf.finalize_model(best_automl)
 best_model = clf.get_config('prep_pipe')
 best_model.steps.append(['trained_model', best_automl])
 print(">>", type(best_model.steps[-1][-1]))
+
+clf.save_model(best_model, 'prep_model')  ## pipeline = preprocessor + model
+prep_model = clf.load_model('prep_model')
+
+pickle.dump(prep_model, open('pipeline.pkl', 'wb'))
+pipeline = pickle.load(open('pipeline.pkl', 'rb'))
 ```
 
 ### Regression
