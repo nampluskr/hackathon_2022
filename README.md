@@ -34,6 +34,8 @@ session = reg.setup(data=boston, target='Purchase', silent=True, verbose=False)
 topk = clf.compare_models(n_select=3, include=['rf', 'gbc', 'et'])
 topk_tuned = [clf.tune_model(model) for model in topk]
 
+bagger = [clf.ensemble_model(model, method='Bagging') for model in topk_tuned]
+booster = [clf.ensemble_model(model, method='Boosting') for model in topk_tuned]
 blender = clf.blend_models(topk_tuned)
 stacker = clf.stack_models(topk_tuned)
 
@@ -57,6 +59,8 @@ session = reg.setup(data=boston, target='medv', silent=True, verbose=False)
 topk = reg.compare_models(n_select=3, include=['rf', 'gbr', 'et'])
 topk_tuned = [reg.tune_model(model) for model in topk]
 
+bagger = [reg.ensemble_model(model, method='Bagging') for model in topk_tuned]
+booster = [reg.ensemble_model(model, method='Boosting') for model in topk_tuned]
 blender = reg.blend_models(topk_tuned)
 stacker = reg.stack_models(topk_tuned)
 
