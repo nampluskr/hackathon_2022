@@ -34,10 +34,24 @@ session = clf.setup(data=train, target=target_name)
 ### Regression
 
 ```python
+from pycaret.datasets import get_data
 import pycaret.regression as reg
 
-session = reg.setup(data=train, target=target_name)
+boston = get_data('boston')
+session = reg.setup(data=boston, target = 'medv', silent=True, verbose=False)
 
+topk = reg.compare_models(n_select=3, include=['rf', 'gbr', 'et'])
+topk_tuned = [reg.tune_model(model) for model in topk]
+
+blender = reg.blend_models(topk_tuned)
+stacker = reg.stack_models(topk_tuned)
+
+best_automl = reg.automl(optimize='MAE')
+best_automl = reg.finalize_model(best_automl)
+
+best_model = reg.get_config('prep_pipe')
+best_model.steps.append(['trained_model', best_automl])
+print(">>", type(best_model.steps[-1][-1]))
 ```
 
 
