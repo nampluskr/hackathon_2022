@@ -1,3 +1,5 @@
+## Run batch jobs for classificatoin
+
 import subprocess
 from itertools import product
 
@@ -32,8 +34,8 @@ def get_defaults():
     defaults['outliers_threshold'] = [0.05]
 
     ## [2] Scale and Transform
-    defaults['normalize'] = [True]
-    defaults['normalize_method'] = ['robust']
+    defaults['normalize'] = [False]
+    defaults['normalize_method'] = ['zscore']
     defaults['transformation'] = [False]
     defaults['transformation_method'] = ['yeo-johnson']
 
@@ -104,6 +106,10 @@ if __name__ == "__main__":
     # splits['n_top']   = [3]
     # splits['metric']  = ['LogLoss']                       ##, 'AUC', 'Prec.', 'Accuracy'
 
-    files = ['model_base.py']
+    files = ['model_base-001.py']   ## blender only
     run(files, get_defaults())
     run(files, splits)
+
+    # files = ['model_base-101.py']   ## bagger, booster, blender, stacker
+    # run(files, get_defaults())
+    # run(files, splits)
