@@ -29,7 +29,7 @@ from pycaret.datasets import get_data
 import pycaret.classification as clf
 
 juice = get_data('juice')
-session = reg.setup(data=boston, target='Purchase', silent=True, verbose=False)
+session = clf.setup(data=juice, target='Purchase', silent=True, verbose=False)
 
 topk = clf.compare_models(n_select=3, include=['rf', 'gbc', 'et'])
 topk_tuned = [clf.tune_model(model) for model in topk]
