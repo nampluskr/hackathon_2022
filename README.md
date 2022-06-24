@@ -99,4 +99,8 @@ pipeline = pickle.load(open('pipeline.pkl', 'rb'))
   - https://pycaret.readthedocs.io/en/latest/api/classification.html
   - https://pycaret.readthedocs.io/en/latest/api/regression.html
   
-* [Pycaret Classification Tutorial for Beginners](https://dacon.io/codeshare/2428)
+* Tutorials
+  - [Pycaret Classification Tutorial for Beginners](https://dacon.io/codeshare/2428)
+  - [Pycaret Classification Tutorial for Intermediate](https://dacon.io/codeshare/2430)
+  - [How to deal with Class Imbalance in Python](https://vitalflux.com/class-imbalance-class-weight-python-sklearn/)
+  - [Balanced Weights For Imbalanced Classification](https://medium.com/grabngoinfo/balanced-weights-for-imbalanced-classification-465f0e13c5ad)
