@@ -57,10 +57,15 @@ pipeline = pickle.load(open('pipeline.pkl', 'rb'))
 
 ### Imbalanced Class
 
-* Weighted Class
-* Under-sampling
+* Weighted Class Approach
+* Under-sampling Approach
+* Data Augmentation for Minority Class
 * Over-sampling
+  - Synthetic Minority Over-sampling Technique (SMOTE)
 * Tuning probability thereshold
+
+
+
 
 ### Regression
 
@@ -128,3 +133,4 @@ add_metric('profit', 'Profit', calculate_profit, greater_is_better=True)
   - [클래스 불균형 다루기](https://hyeonchan523.github.io/ds/class-imbalance/)
   - [Handling Class Imbalance by Introducing Sample Weighting in the Loss Function](https://medium.com/gumgum-tech/handling-class-imbalance-by-introducing-sample-weighting-in-the-loss-function-3bdebd8203b4)
   - [How to Improve Class Imbalance using Class Weights in Machine Learning](https://www.analyticsvidhya.com/blog/2020/10/improve-class-imbalance-class-weights/)
+  - [How to use SMOTE for dealing with imbalanced image dataset for solving classification problems](https://medium.com/swlh/how-to-use-smote-for-dealing-with-imbalanced-image-dataset-for-solving-classification-problems-3aba7d2b9cad)
