@@ -60,6 +60,7 @@ pipeline = pickle.load(open('pipeline.pkl', 'rb'))
 * Weighted Class
 * Under-sampling
 * Over-sampling
+* Tuning probability thereshold
 
 ### Regression
 
