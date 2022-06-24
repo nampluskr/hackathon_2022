@@ -87,6 +87,17 @@ pickle.dump(prep_model, open('pipeline.pkl', 'wb'))
 pipeline = pickle.load(open('pipeline.pkl', 'rb'))
 ```
 
+### Add a new metric
+
+```python
+def calculate_profit(y, y_pred):
+    tp = np.where((y_pred==1) & (y==1), (120-15), 0)
+    fp = np.where((y_pred==1) & (y==0), -15, 0)
+    fn = np.where((y_pred==0) & (y==1), -120, 0)
+    return np.sum([tp, fp, fn])
+
+add_metric('profit', 'Profit', calculate_profit, greater_is_better=True)
+```
 
 ## References
 
