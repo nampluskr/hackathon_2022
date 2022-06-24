@@ -122,4 +122,7 @@ add_metric('profit', 'Profit', calculate_profit, greater_is_better=True)
   - [Pycaret Classification Tutorial for Intermediate](https://dacon.io/codeshare/2430)
   - [How to deal with Class Imbalance in Python](https://vitalflux.com/class-imbalance-class-weight-python-sklearn/)
   - [Balanced Weights For Imbalanced Classification](https://medium.com/grabngoinfo/balanced-weights-for-imbalanced-classification-465f0e13c5ad)
+  - [클래스 불균형 다루기](https://hyeonchan523.github.io/ds/class-imbalance/)
+  - [Handling Class Imbalance by Introducing Sample Weighting in the Loss Function](https://medium.com/gumgum-tech/handling-class-imbalance-by-introducing-sample-weighting-in-the-loss-function-3bdebd8203b4)
+
   - [Classification Problem Using PyCaret](https://blog.devgenius.io/classification-problem-using-pycaret-cd34885b4cda)
