@@ -98,3 +98,5 @@ pipeline = pickle.load(open('pipeline.pkl', 'rb'))
 * API Reference
   - https://pycaret.readthedocs.io/en/latest/api/classification.html
   - https://pycaret.readthedocs.io/en/latest/api/regression.html
+  
+* [Pycaret Classification Tutorial for Beginners](https://dacon.io/codeshare/2428)
