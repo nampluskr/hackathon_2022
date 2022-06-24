@@ -55,6 +55,12 @@ pickle.dump(prep_model, open('pipeline.pkl', 'wb'))
 pipeline = pickle.load(open('pipeline.pkl', 'rb'))
 ```
 
+### Imbalanced Class
+
+* Weighted Class
+* Under-sampling
+* Over-sampling
+
 ### Regression
 
 ```python
